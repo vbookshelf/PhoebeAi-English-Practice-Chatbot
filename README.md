@@ -28,7 +28,7 @@ https://phoebeai.woza.work/
 
 English is the language of international business, science and technology. Many people across the world want to learn english.
 
-One of the best ways to learn a new language is to actually use it. The challenge many face is that they don't have english speaking friends to practice with or they are too shy to start an english conversation. Also, the english person needs to be patient, understanding and speak slowly. This is not always easy to find. These are challenges I personally experienced when I studied Spanish while backpacking through South America.
+One of the best ways to learn a new language is to actually use it. The challenge many face is that they don't have english speaking friends to practice with or they are too shy to start an english conversation. Also, the english person needs to be patient, understanding and speak slowly. This is not always easy to find. 
 
 PhoebeAi is a patient english speaking friend who's available to text chat 24/7. The chatbot is a customized version of ChatGPT. Therefore, it has the ability to emulate a pre defined personality. It can also simulate a real conversation. 
 
