@@ -45,3 +45,7 @@ This repo contains two versions of the web app - a Php version and a Javascript 
 - Download the PhoebeAi-JS folder and place it on your desktop.
 - Add your OpenAi API Key in the following file: chatgpt-api-code.php
 - Double click the index.html file. The app will open in your web browser.
+
+## Translation languages
+
+I've only included about seven languages in the dropdown menu. If your first language is not included then simply modify the index.html (or index.php file) and add your first language to the dropdown menu. That's all that's needed. When you select your language from the dropdown menu, the web app will automatically translate into that language. This is because ChatGPT is trained to speak many languages. But the quality of it's tranlations may vary depending on the language. The translations may be very poor for low resource languages i.e. languages that don't have a lot of text content available on the internet.
