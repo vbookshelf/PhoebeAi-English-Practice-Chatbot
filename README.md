@@ -11,3 +11,4 @@ https://phoebeai.woza.work/
 - The user's grammar and spelling are continuously checked and corrected.
 - Phoebe's responses are translated into the user's first language.
 - The chatbot is powered by OpenAi. In essence it's a free GPT.
+- A simple, ad free chat interface that's mobile optimized.
