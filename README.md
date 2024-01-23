@@ -22,6 +22,7 @@ https://phoebeai.woza.work/
 - Phoebe's responses are translated into the user's first language.
 - The chatbot is a customized version of ChatGPT. In essence it's a free GPT.
 - A simple, ad free chat interface that's mobile optimized.
+- Talk to the Phoebe as you would to a person. If you don't understand something say so, and she will explain further.
 
 ## What problem does this solve?
 
