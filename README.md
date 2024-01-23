@@ -33,14 +33,14 @@ PhoebeAi is a patient english speaking friend who's available to text chat 24/7.
 
 ## How to run this app
 
-This repo contains two versions of the web app - a PHP version and a Javascript version. The PHP version must be uploaded to a web server. The Javascript version can be run from your desktop. In the Php version the user will not be able to see your API key because the php code runs on the server, therefore it's more secure. It's also possible to upload the JS version to a web server, but take note that it's not secure because your API key will be visible to the user. It's not possible to secure an API key in Javascript.
+This repo contains two versions of the web app - a Php version and a Javascript version. The PHP version must be uploaded to a web server. The Javascript version can be run from your desktop. In the Php version the user will not be able to see your API key because the Php code runs on the server, therefore it's more secure. It's also possible to run the JS version on a web server, but it's not secure. Your API key will be visible to the user. It's not possible to secure an API key in Javascript.
 
 ### 1. PHP Version
 - Download the PhoebeAi-Php folder.
 - Add your OpenAi API Key in the following file: chatgpt-api-code.php
 - Upload all the files to your web server as you would when hosting a website.
 
-### 2. Javacsript Version
+### 2. Javascript Version
 - Download the PhoebeAi-JS folder and place it on your desktop.
 - Add your OpenAi API Key in the following file: chatgpt-api-code.php
 - Double click the index.html file. The app will open in your web browser.
