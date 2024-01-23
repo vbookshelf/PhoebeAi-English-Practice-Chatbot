@@ -5,6 +5,10 @@ Learn English by chatting with Phoebe. Improve your conversation skills.<br>
 Live Web App:
 https://phoebeai.woza.work/
 
+<br>
+<img src="https://github.com/vbookshelf/PhoebeAi-English-Practice-Chatbot/blob/main/PhoebeAi-Php/assets/phoebe12.png" width="250"></img>
+<i>Phoebe Ai</i><br>
+
 
 ## Features
 
