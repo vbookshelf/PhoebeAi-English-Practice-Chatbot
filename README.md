@@ -9,6 +9,11 @@ https://phoebeai.woza.work/
 <img src="https://github.com/vbookshelf/PhoebeAi-English-Practice-Chatbot/blob/main/PhoebeAi-Php/assets/phoebe12.png" width="250"></img>
 <i>Phoebe Ai</i><br>
 
+<br>
+<img src="https://github.com/vbookshelf/PhoebeAi-English-Practice-Chatbot/blob/main/images/example-chat.png" width="500"></img>
+<i>Example chat with a Thai user</i><br>
+
+<br>
 
 ## Features
 
