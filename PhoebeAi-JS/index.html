@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	
+	<meta charset="utf-8">
+	<title>Phoebe - English Practice Chatbot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A chatbot powered by ChatGPT.">
+		
+		
+	<!--CSS Stylesheets-->
+	<link rel="stylesheet" href="css/w3.css">
+	
+	
+    <style>
+      body {
+        background-color: #f9f9f9;
+		font-family: Arial, sans-serif;
+		font-size: 18px;
+		color: #36454F;
+      }
+	   main {
+	   	margin-bottom: 200px;
+	   	color: #36454F;
+        padding: 10px;
+	}
+	
+	.responsive {
+		 width: 100%; /*Makes media scalable as the viewport size changes*/
+		 height: auto;
+		 max-width: 250px;
+		 
+		 } 
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+	  
+      .sticky-bar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #36454F; /* Charcoal */
+        color: #fff;
+        padding: 10px; /*30px*/
+        text-align: center;
+      }
+      .sticky-bar input[type="text"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-right: 10px;
+        width: 60%;
+        font-size: 18px;
+      }
+      .sticky-bar input[type="submit"] {
+        background-color: #fff;
+        color: #333;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+      }
+	  .message-container {
+        margin-bottom: 10px;
+        padding: 5px 20px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+		line-height: 1.8;
+		letter-spacing: 0.02em;
+	}
+	.set-color1 {
+		color: red;
+	}
+	.set-color2 {
+		color: purple;
+	}
+	
+	
+	#chat-buttons {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  margin-top: 10px;
+	}
+	
+	#chat-buttons button {
+	  margin-right: 20px;
+	  padding: 0px 20px;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  font-size: 15px;
+	  background-color: #36454F;
+	  color: #f9f9f9;
+	  border: none;
+	}
+	
+	#chat-buttons input[type="file"] {
+	  display: none;
+	}
+	
+	#chat-buttons label {
+	  display: inline-block;
+	  padding: 0px 20px;
+	  border-radius: 5px;
+	  cursor: pointer;
+	  font-size: 15px;
+	  background-color: #36454F;
+	  color: #f9f9f9;
+	  border: none;
+	}
+		
+	#chat-buttons input[type="file"] + label {
+	  margin-right: 10px;
+	}
+	
+	#chat-buttons input[type="file"] + label:before {
+	  content: "Load a saved chat";
+	}
+	
+	.sticky-image {
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+		
+	.lighter-black {
+		color: teal; /* Slate */
+		
+	}
+	
+	#language-dropdown {
+    	margin-top: 10px;
+		font-size: 15px;
+	}	
+
+	
+	</style>
+
+	
+  </head>
+  <body>
+	  
+	  
+	  
+	  
+    <div class="container w3-animate-opacity">
+		
+		<!-- -->
+		<div id="main-image">
+			<img class="responsive" src="assets/phoebe2.png" alt="Avatar">
+		</div>
+		
+	
+	  
+	  <main id="chat">
+	      <div class="message-container">
+			  <span id="first-chat-block" class="set-color1"><b>&#x2022 ChatGPT</b></span>
+	        
+	        <p>Select your first language. Then just say hello!</p>
+	      </div>
+		  
+		  
+	      <!-- Add more message containers here -->
+ 	 </main>
+	 
+	 
+	 
+	 
+      <div class="sticky-bar">
+		  
+		<form id="myForm" method="post">
+          <input id="user-input" type="text" name="my_message" placeholder="Send a message..." autofocus>
+		  <input type="hidden" name="robotblock">
+		  
+		  
+		  <input type="submit" value="Send">
+	  		
+	  	</form>
+		
+		<!-- Click on this div (near the bottom of the page) causes the 
+		main image to appear and disappear.	
+		<div id="chat-buttons" onclick="toggleImageOnClick('main-image')">
+		  <button onclick="saveChatHistoryToCsv()">Save this chat</button>
+		  <input type="file" id="csv-file" accept=".csv">
+		  <label for="csv-file"></label>
+		</div>
+		-->
+		
+		<div id="language-dropdown">
+			<label for="language-select">Your First Language:</label>
+		  <select id="language-select" onchange="updateSelectedLanguage()">
+		    <option value="thai" selected>Thai (ไทย)</option>
+		    <option value="vietnamese">Vietnamese (Tiếng Việt)</option>
+		    <option value="spanish">Spanish (Español)</option>
+		    <option value="french">French (Français)</option>
+		    <option value="malaysian">Malaysian (Bahasa Malaysia)</option>
+		  </select>
+		</div>
+
+		
+      </div>
+	 
+    </div>
+	
+	
+	<!--The page gets scrolled up to this id.-->
+	<div id="chatgpt">
+	</div>
+	
+	<!--Onload a click is simulated on this to scroll the page to id="bottom-bar"-->
+	<a href="#chatgpt" id="scroll-page-up"></a>
+	
+  </body>
+</html>
+
+
+
+
+<script>
+	
+	
+
+</script>
+
+
+
+
+<script>
+
+//Simulates a click.
+function simulateClick(tabID) {
+	
+	// Simulate a click.
+	document.getElementById(tabID).click();
+	
+}
+
+// Function to show or hide the main image onclick
+function toggleImageOnClick(imageId) {
+	
+	const image = document.getElementById(imageId);
+	
+	if (image.style.display === 'none') {
+      image.style.display = 'block';
+    } else {
+      image.style.display = 'none';
+  }
+}
+
+
+</script>
+
+
+<!-- Import the utils.js file -->
+<script src="utils.js"></script>
+
+<!-- Import the chatgpt config and api function -->
+<script src="chatgpt-config.js"></script>
+
+<script>
+	// Set the name of the bot in the first chat block
+	document.getElementById("first-chat-block").innerHTML = "<b>&#x2022 " + bot_name + "</b>";
+</script>
+
+
+<script>
+
+
+// Get the form
+var form = document.getElementById('myForm');
+
+form.onsubmit = function(event) {
+	
+	  // Prevent the default form submission behavior
+	  event.preventDefault();
+	  
+	  // Get the form data
+	  var formData = new FormData(form);
+	 
+	  
+	  // Clear the form input
+	  form.reset();
+	  
+	  // Get the value of my_message
+	  var my_message = formData.get("my_message");
+	  //console.log($my_message);
+	  
+	  
+	  // Format the input into paragraphs. This
+	  // adds paragrah html to the students chat.
+	  // It's main use is in Maiya's chat where the long response needs 
+	  // to be formatted into separate paragraphs.
+	  my_message = formatResponse(my_message);
+	  
+	  console.log(my_message)
+	
+	  
+	  var input_message = {
+	  sender: user_name,
+	  text: my_message
+		};
+	
+	
+	//console.log(input_message.text);
+	
+	
+	// Add a user message to the chat
+	addMessageToChat(input_message);
+	
+	
+	// Scroll the page up by cicking on a div at the bottom of the page.
+	simulateClick('scroll-page-up');
+	
+	
+	// Make an API call and process the response.
+	// Refer to: chatgpt-config.js
+	makeApiRequest(my_message);
+	
+ 
+};	
+  
+
+</script>
+
+
+
