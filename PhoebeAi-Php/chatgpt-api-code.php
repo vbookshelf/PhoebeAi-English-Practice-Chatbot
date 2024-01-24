@@ -8,7 +8,7 @@ include "name_config.php";
 //------------
 	
 // Your API Key
-$apiKey = 'Your-API-Key';
+$apiKey = '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';
 
 
 $model_type = "gpt-3.5-turbo-0301";
@@ -188,7 +188,7 @@ Your task is to perform the following actions:
 2- Translate the bot_response text into $translation_language.
 3- Respond in a consistent format. Output a JSON string with the following schema:
 {
-"correction": "<Your corrected version of the user_message>",
+"correction": "<Your corrected version of the user_message. Assign '---' if there are no errors.>",
 "english_reply": "<The bot_response in english>",
 "translated_reply": "<The bot_response translated into $translation_language>"
 }
