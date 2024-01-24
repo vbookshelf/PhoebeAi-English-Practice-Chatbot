@@ -34,7 +34,9 @@ PhoebeAi is a patient english speaking friend who's available to text chat 24/7.
 
 ## How to run this app
 
-This repo contains two versions of the web app - a Php version and a Javascript version. The PHP version must be uploaded to a web server. The Javascript version can be run from your desktop. In the Php version the user will not be able to see your API key because the Php code runs on the server, therefore it's more secure. It's also possible to run the JS version on a web server, but it's not secure. Your API key will be visible to the user. It's not possible to secure an API key in Javascript.
+This repo contains two versions of the web app - a Php version and a Javascript version. The JS version works slightly differently from the Php version because the system messages are different. The system messages control the chatbot's personality and behaviour.
+
+The Php version must be uploaded to a web server. The Javascript version can be run from your desktop. In the Php version the user will not be able to see your API key because the Php code runs on the server, therefore it's more secure. It's also possible to run the JS version on a web server, but it's not secure. Your API key will be visible to the user. It's not possible to secure an API key in Javascript.
 
 ### 1. PHP Version
 - Download the PhoebeAi-Php folder.
