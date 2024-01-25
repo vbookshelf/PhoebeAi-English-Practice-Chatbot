@@ -1,9 +1,11 @@
 # PhoebeAi English Practice Chatbot
 Learn English by chatting with Phoebe. Improve your conversation skills.<br>
-[ Repo under construction ]
+
 
 Live Web App:
 https://phoebeai.woza.work/
+
+This is a non-profit social imapact project. I've assigned a small monthly budget to this live web app. Please note that it may not work when this budget is used up. Therefore, it will be better for you to download the code from this repo and use your own OpenAi API Key.
 
 <br>
 <img src="https://github.com/vbookshelf/PhoebeAi-English-Practice-Chatbot/blob/main/PhoebeAi-Php/assets/phoebe12.png" width="250"></img>
