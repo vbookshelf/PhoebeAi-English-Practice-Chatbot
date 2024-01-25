@@ -1,5 +1,6 @@
 # PhoebeAi English Practice Chatbot
 Learn English by chatting with Phoebe. Improve your conversation skills.<br>
+You can talk to Phoebe as if she was a real person. If you don't understand something she says, tell her and she will explain further.<br>
 
 
 Live Web App:
@@ -24,8 +25,6 @@ This is a non-profit social impact project. I've assigned a monthly budget to th
 - Phoebe's responses are translated into the user's first language.
 - The chatbot is a customized version of ChatGPT.
 - A simple, mobile optimized chat interface.
-
-Talk to the Phoebe as if she was a real person. If you don't understand something say so, and she will explain further.
 
 ## What problem does this solve?
 
