@@ -30,7 +30,7 @@ This is a non-profit social impact project. I've assigned a monthly budget to th
 
 English is the language of international business, science and technology. Many people across the world want to learn english.
 
-One of the best ways to learn a new language is to actually use it. The challenge many face is that they don't have english speaking friends to practice with or they are too shy to start an english conversation.
+One of the best ways to learn a new language is to use it. The challenge many face is that they don't have english speaking friends to practice with or they are too shy to start an english conversation.
 
 PhoebeAi is a patient english speaking friend who's available to text chat 24/7. The chatbot is a customized version of ChatGPT. Therefore, it has the ability to emulate a pre defined personality. It can also simulate a real conversation. 
 
