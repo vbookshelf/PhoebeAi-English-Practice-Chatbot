@@ -20,15 +20,16 @@ https://phoebeai.woza.work/
 - The chatbot has a quirky and fun personality that's based on Phoebe from Friends.
 - The user's grammar and spelling are continuously checked and corrected.
 - Phoebe's responses are translated into the user's first language.
-- The chatbot is a customized version of ChatGPT. In essence it's a free GPT.
-- A simple, ad free chat interface that's mobile optimized.
-- Talk to the Phoebe as you would to a person. If you don't understand something say so, and she will explain further.
+- The chatbot is a customized version of ChatGPT.
+- A simple, mobile optimized chat interface.
+
+Talk to the Phoebe as if she was a real person. If you don't understand something say so, and she will explain further.
 
 ## What problem does this solve?
 
 English is the language of international business, science and technology. Many people across the world want to learn english.
 
-One of the best ways to learn a new language is to actually use it. The challenge many face is that they don't have english speaking friends to practice with or they are too shy to start an english conversation. Also, the english person needs to be patient, understanding and speak slowly. This is not always easy to find. 
+One of the best ways to learn a new language is to actually use it. The challenge many face is that they don't have english speaking friends to practice with or they are too shy to start an english conversation.
 
 PhoebeAi is a patient english speaking friend who's available to text chat 24/7. The chatbot is a customized version of ChatGPT. Therefore, it has the ability to emulate a pre defined personality. It can also simulate a real conversation. 
 
@@ -36,7 +37,7 @@ PhoebeAi is a patient english speaking friend who's available to text chat 24/7.
 
 This repo contains two versions of the web app - a Php version and a Javascript version. The JS version works slightly differently from the Php version because the system messages are different. The system messages control the chatbot's personality and behaviour. Also, the temperature in the JS version is set higher than the temperature in the Php version (temperature = 0.5).
 
-The Php version must be uploaded to a web server. The Javascript version can be run from your desktop. In the Php version the user will not be able to see your API key because the Php code runs on the server, therefore it's more secure. It's also possible to run the JS version on a web server, but it's not secure. Your API key will be visible to the user. It's not possible to secure an API key in Javascript.
+The Php version must be uploaded to a web server. The Javascript version can be run from your desktop. In the Php version the user will not be able to see your API key because Php code runs on the server, therefore it's more secure. It's also possible to run the JS version on a web server, but it's not secure. Your API key will be visible to the user. It's not possible to secure an API key in Javascript.
 
 ### 1. PHP Version
 - Download the PhoebeAi-Php folder.
@@ -54,5 +55,5 @@ I've only included seven languages in the dropdown menu. If your first language 
 
 ## Known Issues
 
-- The spelling and grammar corrections are not a;ways made correctly. When there are no spelling or grammar errors the bot should output '---'. Instead it sometimes outputs the user's original message. I think this is because the bot is not always obeying the correction instructions in the system message.
-- The translations are not always perfect. The translation may not correctly capture of meaning of some informal and quirky expressions that the bot uses.
+- The spelling and grammar corrections are not always done correctly.
+- The translations are not always perfect. The translation may not correctly capture the meaning of some informal and quirky things the bot says. Also, translations for low resource languages are not very good.
