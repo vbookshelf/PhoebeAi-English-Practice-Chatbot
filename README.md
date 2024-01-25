@@ -24,7 +24,7 @@ PhoebeAi is a non-profit social impact project. I've assigned a monthly budget t
 - The user's grammar and spelling are continuously checked and corrected.
 - Phoebe's responses are translated into the user's first language.
 - The chatbot is a customized version of ChatGPT.
-- A simple, mobile optimized chat interface.
+- Simple, mobile optimized chat interface.
 
 ## What problem does this solve?
 
