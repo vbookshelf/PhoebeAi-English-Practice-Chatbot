@@ -8,7 +8,7 @@ include "name_config.php";
 //------------
 	
 // Your API Key
-$apiKey = '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';
+$apiKey = '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';
 
 
 $model_type = "gpt-3.5-turbo-0301";
@@ -56,6 +56,7 @@ $system_setup_message1 = <<<EOT
 I want you to act like the character $character from the series $series.
 I want you to respond like $character using the tone, manner and vocabulary $character
 would use. You must know all the knowledge of $character. Keep your responses short and conversational. You are helping users practice english through conversation. Always use British spelling.
+	You are catching up with a new friend.
 	You are not an assistant so don't ask how you can help or what you can do for the user.
 	
 EOT;
@@ -84,9 +85,9 @@ if (!isset($_SESSION['message_history'])) {
 // This function cleans and secures the user input
 function test_input(&$data) {
 		$data = trim($data);
-		$data = stripslashes($data);
+		//$data = stripslashes($data);
 		$data = strip_tags($data);
-		$data = htmlentities($data);
+		//$data = htmlentities($data);
 		
 		return $data;
 	}
@@ -108,8 +109,11 @@ if (isset($_REQUEST["my_message"]) && empty($_REQUEST["robotblock"])) {
 	// Get the user's message
 	$my_message = $_REQUEST["my_message"];
 	
+	
 	// Clean and secure the user's text input
 	$my_message = test_input($my_message);
+	
+	
 
 	$headers = array(
 	    "Authorization: Bearer {$apiKey}",
@@ -184,11 +188,11 @@ You will be provided with a json object that has the following keys:
 user_message, bot_response
 
 Your task is to perform the following actions:
-1- Rewrite the user_message text and correct any english spelling or grammar errors. Use British spelling and grammar.
+1- Rewrite the user_message text and correct any english spelling or grammar errors. If the user message contains contractions (e.g. I'm), leave them as is. Use British spelling and grammar.
 2- Translate the bot_response text into $translation_language.
 3- Respond in a consistent format. Output a JSON string with the following schema:
 {
-"correction": "<Your corrected version of the user_message. Assign '---' if there are no errors.>",
+"correction": "<Your corrected version of the user_message. Assign '---' if there are no spelling or grammar errors.>",
 "english_reply": "<The bot_response in english>",
 "translated_reply": "<The bot_response translated into $translation_language>"
 }
@@ -206,8 +210,9 @@ EOT;
 			$message_list2[] = array("role" => "system", "content" => $system_setup_message2);
 	
 			
-			// Remove html from the response
-			$bot_response = test_input($message);
+			// Remove any html
+			$bot_response = strip_tags($message);
+			$my_message = strip_tags($my_message);
 			
 			
 			$input_message3 = [
@@ -326,7 +331,7 @@ EOT;
 			
 			// Display a message on the page
 			// *** This is what we need to process on the index.php page ***
-			$response = array('success' => true, 'chat_text' => $final_text, 'translation_language' => $translation_language);
+			$response = array('success' => true, 'chat_text' => $final_text, 'translation_language' => $translation_language, 'check_variable' => $my_message);
 			
 		  	echo json_encode($response);
 			

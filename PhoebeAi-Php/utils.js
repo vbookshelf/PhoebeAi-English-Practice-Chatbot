@@ -227,6 +227,9 @@ function addMessageToChat(message) {
   
   chat.appendChild(messageContainer);
   
+  // Scroll the page up by cicking on a div at the bottom of the page.
+  simulateClick('scroll-page-up');
+  
 }
 
 

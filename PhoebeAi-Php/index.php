@@ -199,7 +199,7 @@ include "name_config.php";
 		<!-- -->
 		<div id="main-image" class="w3-center">
 			<img class="responsive w3-round" src="assets/phoebe12.png" alt="Avatar">
-			<h4 class="space-letters"><b>Phoebe Ai</b><br><span class="w3-text-teal">Learn English by chatting with Phoebe. Improve your conversation skills.</span></h4>
+			<h4 class="space-letters"><b>Phoebe Ai</b><br><span class="w3-text-teal">Learn English by chatting with Phoebe.</span></h4>
 		</div>
 		
 	
