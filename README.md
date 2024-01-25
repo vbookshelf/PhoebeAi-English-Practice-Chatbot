@@ -6,7 +6,7 @@ You can talk to Phoebe as if she was a real person. If you don't understand some
 Live Web App:
 https://phoebeai.woza.work/
 
-This is a non-profit social impact project. I've assigned a monthly budget to this live web app. Please note that it will not work when this budget is used up. Therefore, it will be better for you to download the code from this repo and use your own OpenAi API Key.
+PhoebeAi is a non-profit social impact project. I've assigned a monthly budget to this live web app. Please note that it will not work when this budget is used up. Therefore, it will be better for you to download the code from this repo and use your own OpenAi API Key.
 
 <br>
 <img src="https://github.com/vbookshelf/PhoebeAi-English-Practice-Chatbot/blob/main/PhoebeAi-Php/assets/phoebe12.png" width="250"></img>
