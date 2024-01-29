@@ -259,6 +259,17 @@ async function makeApiRequest(my_message) {
 				var thai_reply = removeHtmlTags(response_text['translated_reply']);
 				
 				
+				// Sometimes the bot just echoes the user's message in the correction.
+				// This code tries to prevent that from happening.
+				// checkVariable gets written to the browser console in the index.php file.
+				if (my_message === correction) {
+				    correction = "---";
+				    var checkVariable = "The strings are identical.";
+				} else {
+				    var checkVariable = "The strings are different.";
+				}
+				
+				
 				
 				var final_text = `
 				<p class='lighter-black'><i>Correction: ${correction}</i></p><p>${english_reply}</p><p>${thai_reply}</p>
@@ -283,6 +294,17 @@ async function makeApiRequest(my_message) {
 				var correction = removeHtmlTags(response_text['correction']);
 				var english_reply = removeHtmlTags(response_text['english_reply']);
 				var thai_reply = removeHtmlTags(response_text['translated_reply']);
+				
+				
+				// Sometimes the bot just echoes the user's message in the correction.
+				// This code tries to prevent that from happening.
+				// checkVariable gets written to the browser console in the index.php file.
+				if (my_message === correction) {
+				    correction = "---";
+				    var checkVariable = "The strings are identical.";
+				} else {
+				    var checkVariable = "The strings are different.";
+				}
 				
 				
 				var final_text = `
