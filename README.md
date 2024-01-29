@@ -67,4 +67,4 @@ In the movie "The Matrix," Agent Smith explains why the Matrix is not created as
 
 This dialogue highlights the idea that humans rejected a utopian Matrix because it didn't align with their nature, and they needed the element of suffering to accept the simulated reality.
 
-I took inspiration from this quote when designing this simulated reality. What makes Phoebe more believable is that that she has a past that could be inspiring or disturbing, depending on how you see it.
+I took inspiration from this quote when designing this simulated reality. What makes Phoebe more relatable is that that she has a past that could be inspiring or disturbing, depending on how you see it.
