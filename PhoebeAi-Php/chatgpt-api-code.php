@@ -8,7 +8,7 @@ include "name_config.php";
 //------------
 	
 // Your API Key
-$apiKey = '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';
+$apiKey = 'Your-API-Key';
 
 
 $model_type = "gpt-3.5-turbo-0301";
