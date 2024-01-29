@@ -8,7 +8,7 @@ include "name_config.php";
 //------------
 	
 // Your API Key
-$apiKey = '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';
+$apiKey = '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';
 
 
 $model_type = "gpt-3.5-turbo-0301";
@@ -188,7 +188,7 @@ You will be provided with a json object that has the following keys:
 user_message, bot_response
 
 Your task is to perform the following actions:
-1- Rewrite the user_message text and correct any english spelling or grammar errors. If the user message contains contractions (e.g. I'm), leave them as is. Use British spelling and grammar.
+1- Rewrite the user_message text and correct any english spelling or grammar errors. If the user message contains contractions (e.g. I'm), leave them as is. Use British spelling and grammar. If the user uses the word "thanks", don't change this to "thank you".
 2- Translate the bot_response text into $translation_language.
 3- Respond in a consistent format. Output a JSON string with the following schema:
 {
@@ -274,6 +274,23 @@ EOT;
 					$correction = test_input($response_text['correction']);
 					$english_reply = test_input($response_text['english_reply']);
 					$thai_reply = test_input($response_text['translated_reply']);
+						
+						
+					// *** Sometimes the bot just echoes the user's message in the correction. 
+					// This code trys to prevent that from happening.
+					// check_variable gets written to the browser console in the index.php file.
+					if ($my_message === $correction) {
+						
+						$correction = "---";
+					    $check_variable =  "The strings are identical.";
+						
+					} else {
+						
+						$check_variable =  "The strings are different.";
+					}
+					
+					
+					
 					
 					$final_text = "
 					    <p class='lighter-black'><i>Correction: {$correction}</i></p>
@@ -331,7 +348,7 @@ EOT;
 			
 			// Display a message on the page
 			// *** This is what we need to process on the index.php page ***
-			$response = array('success' => true, 'chat_text' => $final_text, 'translation_language' => $translation_language, 'check_variable' => $my_message);
+			$response = array('success' => true, 'chat_text' => $final_text, 'translation_language' => $translation_language, 'check_variable' => $check_variable);
 			
 		  	echo json_encode($response);
 			

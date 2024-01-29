@@ -199,7 +199,7 @@ include "name_config.php";
 		<!-- -->
 		<div id="main-image" class="w3-center">
 			<img class="responsive w3-round" src="assets/phoebe12.png" alt="Avatar">
-			<h4 class="space-letters"><b>Phoebe Ai</b><br><span class="w3-text-teal">Learn English by chatting with Phoebe.</span></h4>
+			<h4 class="space-letters"><b>Phoebe Ai</b><br><span class="w3-text-teal">Learn English by chatting with Phoebe</span></h4>
 		</div>
 		
 	
@@ -253,6 +253,9 @@ include "name_config.php";
 			<option value="japanese">Japanese (日本語)</option>
 			<option value="hindi">Hindi (हिन्दी)</option>
 			<option value="tamil">Tamil (தமிழ்)</option>
+			<option value="french">French (Français)</option>
+			<option value="brazilian-portuguese">Portuguese (Brasil)</option>
+			<option value="turkish">Turkish (Türkçe)</option>
 		  </select>
 	  </div>
 		
@@ -399,6 +402,8 @@ form.onsubmit = function(event) {
 	  
 	  console.log(response.translation_language);
 	  
+	  console.log("--Check--");
+	  console.log(response.check_variable);
 	  
 	  // Add the 'selected' attribute to the dropdown menu
 	  updateSelectedLanguage(translation_language);
