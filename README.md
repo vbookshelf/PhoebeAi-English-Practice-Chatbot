@@ -61,7 +61,7 @@ I've only included ten languages in the dropdown menu. If your first language is
 
 ## Random thoughts
 
-In the movie "The Matrix," Agent Smith explains why the Matrix is not created as a perfect world during a conversation with Morpheus. The line goes like this:
+In the movie "The Matrix," Agent Smith explains, during a conversation with Morpheus, why the Matrix is not created as a perfect world. The line goes like this:
 
 "Did you know that the first Matrix was designed to be a perfect human world, where none suffered, where everyone would be happy? It was a disaster. No one would accept the program, entire crops were lost. Some believed we lacked the programming language to describe your perfect world. But I believe that, as a species, human beings define their reality through suffering and misery."
 
