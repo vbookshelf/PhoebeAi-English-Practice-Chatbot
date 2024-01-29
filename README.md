@@ -58,3 +58,13 @@ I've only included ten languages in the dropdown menu. If your first language is
 
 - The spelling and grammar corrections are not always done correctly.
 - The translations are not always perfect. The translation may not correctly capture the meaning of some informal and quirky things the bot says. Also, translations for low resource languages are not very good.
+
+## Random thoughts
+
+In the movie "The Matrix," Agent Smith explains why the Matrix is not created as a perfect world during a conversation with Morpheus. The line goes like this:
+
+"Did you know that the first Matrix was designed to be a perfect human world, where none suffered, where everyone would be happy? It was a disaster. No one would accept the program, entire crops were lost. Some believed we lacked the programming language to describe your perfect world. But I believe that, as a species, human beings define their reality through suffering and misery."
+
+This dialogue highlights the idea that humans rejected a utopian Matrix because it didn't align with their nature, and they needed the element of suffering to accept the simulated reality.
+
+I took inspiration from this quote when designing this simulated reality. What makes Phoebe more believable is that that she has a past that could be inspiring or disturbing, depending on how you see it.
