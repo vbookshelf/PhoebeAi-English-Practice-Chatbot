@@ -25,6 +25,7 @@ PhoebeAi is a non-profit social impact project. I've assigned a monthly OpenAi A
 - Phoebe's responses are translated into the user's first language.
 - The chatbot is a customized version of ChatGPT.
 - Simple, mobile optimized chat interface.
+- Can be deployed on a cheap, shared web server
 
 ## What problem does this solve?
 
@@ -39,6 +40,8 @@ PhoebeAi is a patient english speaking friend who's available to text chat 24/7.
 This repo contains two versions of the web app - a Php version and a Javascript version. The JS version works slightly differently from the Php version because the system messages are different. The system messages control the chatbot's personality and behaviour. Also, the temperature in the JS version is set higher than the temperature in the Php version (temperature = 0.5).
 
 The Php version must be uploaded to a web server. The Javascript version can be run from your desktop. In the Php version the user will not be able to see your API key because Php code runs on the server, therefore it's more secure. It's also possible to run the JS version on a web server, but it's not secure. Your API key will be visible to the user. It's not possible to secure an API key in Javascript.
+
+I chose Php because low cost, shared web servers have Php pre-installed. This makes this app easy to deploy and the web hosting costs are low. If this app were written in Python, for example, then a server would need to be hired and then set up from scratch. It would also need to be maintained. This costs more and involves a lot more work.
 
 ### 1. PHP Version
 - Download the PhoebeAi-Php folder.
