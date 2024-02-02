@@ -1,6 +1,6 @@
 # PhoebeAi English Practice Chatbot
 Learn English by chatting with Phoebe. Improve your conversation skills.<br>
-You can talk to Phoebe as if she was a real person. If you don't understand something she says, tell her and she will explain further.<br>
+Phoebe is a friendly chatbot that's powered by ChatGPT. Her personality is based on the character Phoebe from Friends. You can talk to Phoebe as if she was a real person. If you don't understand something she says, tell her and she will explain further.<br>
 
 
 Live Web App:
