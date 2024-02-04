@@ -35,6 +35,8 @@ One of the best ways to learn a new language is to use it. The challenge many fa
 
 PhoebeAi is a patient english speaking friend who's available to text chat 24/7. The chatbot is a customized version of ChatGPT. Therefore, it has the ability to emulate a pre defined personality. It can also simulate a real conversation. 
 
+This is also a tool that deaf people, from non-english speaking countries, can use to practice english. Being able to chat fluently in English will give deaf people access to remote work opportunities as international freelancers.
+
 ## How to run this app
 
 This repo contains two versions of the web app - a Php version and a Javascript version. The JS version works slightly differently from the Php version because the system messages are different. The system messages control the chatbot's personality and behaviour. Also, the temperature in the JS version is set higher than the temperature in the Php version (temperature = 0.5).
